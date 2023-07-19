@@ -4,7 +4,7 @@ import time
 from sys import *
 import os
 
-def ProcessDisplay(log_dir = "Vijay"):
+def ProcessDisplay(log_dir = "digvijay"):
     listprocess = []
 
     if not os.path.exists(log_dir):
@@ -14,10 +14,10 @@ def ProcessDisplay(log_dir = "Vijay"):
             pass
 
     seperator = "-"*80
-    log_path = os.path.join(log_dir,"Vijay%s.log")
+    log_path = os.path.join(log_dir,"digvijay%s.log")
     f = open(log_path,'w')
     f.write(seperator + "\n")
-    f.write("Shantanu Infosystem process Logger : " "\n")
+    f.write("Digvijay Infosystem process Logger : " "\n")
     f.write(seperator + "\n")
 
     for proc in psutil.process_iter():
